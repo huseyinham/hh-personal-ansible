@@ -1,0 +1,9 @@
+---
+- name: Execute Dev-Ops script
+  hosts: ubuntu-001
+  become: yes
+
+  tasks:
+
+    - template: src=~/git/personal/hh-personal-ansible/config/apt.conf dest=/etc/apt/apt.conf
+
